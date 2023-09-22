@@ -1,0 +1,148 @@
+.imagem-esquerda {
+    float: left;
+    margin-right: 20px;
+    border: 2px solid indigo;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+.container{
+    max-width: 960px;
+    width: 95%;
+    padding: 5%;
+    margin: 10px auto;
+    border: 1px solid #111;
+    text-align: justify;
+}
+h1{
+    background-color: mediumpurple;
+    color: mediumpurple;
+    text-align: justify;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0;
+}
+
+h2{
+    margin-top: 20px;
+    text-align: justify;
+    color: mediumpurple;
+}
+
+ol{
+    list-style-type: decimal;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+ul{
+    list-style-type: square;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+ol li a{
+    text-decoration: none;
+    text-align: justify;
+    color: mediumpurple;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid mediumpurple;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+ul li p {
+    margin-top: 5px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.link{
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    margin: 0 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.link i{
+    transition: .2s;
+}
+
+.link:hover i{
+    color: #fff;
+    transform: scale(0.85);
+}
+
+.link-1{
+    color: blue;
+}
+.link-2{
+    color: black;
+}
+.link-3{
+    color: #FF00BF;
+}
+
+.link-1::before{
+    background-color: blue;
+}
+.link-2::before{
+    background-color: black;
+}
+.link-3::before{
+    background-color: #FF00BF;
+}
+
+.link::before{
+    content:"";
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: absolute;
+    left: -10px;
+    top: 100%;    
+}
+
+.link:hover::before{
+    animation: desloca .5s;
+    left: 0;
+    top: 0;
+}
+
+@keyframes desloca {
+    0%{
+        left: -10px;
+        top: 100%;
+    }
+    50%{
+        left: 15%;
+        top: -25%;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+
+
